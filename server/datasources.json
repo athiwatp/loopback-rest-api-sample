@@ -1,0 +1,16 @@
+{
+  "mysql": {
+    "host": "localhost",
+    "port": 0,
+    "url": "mysql://root:mysql@localhost/zul",
+    "database": "zul",
+    "password": "mysql",
+    "name": "mysql",
+    "user": "root",
+    "connector": "mysql"
+  },
+  "memory": {
+    "name": "memory",
+    "connector": "memory"
+  }
+}

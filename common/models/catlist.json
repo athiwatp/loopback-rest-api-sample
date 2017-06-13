@@ -1,0 +1,46 @@
+{
+  "name": "catlist",
+  "plural": "catlist",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id_catlist": {
+      "type": "number",
+      "id": true
+    },
+    "quantity": {
+      "type": "number"
+    },
+    "id_cat": {
+      "type": "number"
+    },
+    "id_psc": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "cat": {
+      "type": "belongsTo",
+      "model": "cat",
+      "foreignKey": "id_cat"
+    },
+    "psc": {
+      "type": "belongsTo",
+      "model": "psc",
+      "foreignKey": "id_psc"
+    }
+  },
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "DENY"
+    }
+  ],
+  "methods": {}
+}

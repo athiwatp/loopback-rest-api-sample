@@ -1,0 +1,75 @@
+{
+  "name": "cat",
+  "plural": "cat",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true,
+    "mysql": {
+      "table": "cat"
+    }
+  },
+  "properties": {
+    "id_cat": {
+      "type": "number",
+      "id": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "procedure": {
+      "type": "string"
+    },
+    "radius": {
+      "type": "number"
+    },
+    "duration": {
+      "type": "number"
+    },
+    "id_alat": {
+      "type": "number"
+    },
+    "id_pengencer": {
+      "type": "number"
+    },
+    "id_substrat": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "alat": {
+      "type": "belongsTo",
+      "model": "alat",
+      "foreignKey": "id_alat"
+    },
+    "pengencer": {
+      "type": "belongsTo",
+      "model": "pengencer",
+      "foreignKey": "id_pengencer"
+    },
+    "substrat": {
+      "type": "belongsTo",
+      "model": "substrat",
+      "foreignKey": "id_substrat"
+    },
+    "catlists": {
+      "type": "hasOne",
+      "model": "catlist",
+      "foreignKey": "id_cat"
+    }
+  },
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "DENY"
+    }
+  ],
+  "methods": {}
+}

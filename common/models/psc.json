@@ -1,0 +1,49 @@
+{
+  "name": "psc",
+  "plural": "psc",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id_psc": {
+      "type": "number",
+      "id": true
+    },
+    "psc_name": {
+      "type": "string"
+    },
+    "psc_address": {
+      "type": "string"
+    },
+    "psc_telp": {
+      "type": "string"
+    },
+    "id_kota": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "catlists": {
+      "type": "hasOne",
+      "model": "catlist",
+      "foreignKey": "id_psc"
+    },
+    "city": {
+      "type": "belongsTo",
+      "model": "city",
+      "foreignKey": "id_city"
+    }
+  },
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "DENY"
+    }
+  ],
+  "methods": {}
+}

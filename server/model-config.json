@@ -1,0 +1,75 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "cat": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "alat": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "pengencer": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "substrat": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "user": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "AccessToken": {
+    "dataSource": "memory",
+    "public": false,
+    "relations": {
+      "user": {
+        "type": "belongsTo",
+        "model": "user",
+        "foreignKey": "userId"
+      }
+    }
+  },
+  "User": {
+    "dataSource": "memory",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "memory",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "memory",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "memory",
+    "public": false
+  },
+  "catlist": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "psc": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "city": {
+    "dataSource": "mysql",
+    "public": true
+  }
+}

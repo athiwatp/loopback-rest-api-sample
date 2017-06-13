@@ -1,0 +1,35 @@
+{
+  "name": "city",
+  "plural": "city",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id_kota": {
+      "type": "number",
+      "id": true
+    },
+    "nama_kota": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "psc": {
+      "type": "hasMany",
+      "model": "psc",
+      "foreignKey": "id_city"
+    }
+  },
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "DENY"
+    }
+  ],
+  "methods": {}
+}
