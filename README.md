@@ -1,7 +1,9 @@
 # README #
 
 A REST API Server implemented by loopback.
+
 This API contains feature such as:
+
 * authentication and authorization
 * CRUD
 * validation
