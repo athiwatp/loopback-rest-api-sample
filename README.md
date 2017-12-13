@@ -1,6 +1,14 @@
 # README #
 
-A REST API Server implemented by loopback. This API contains feature such as authentication and authorization, CRUD, validation, filtering or searching, pagination, column filtering(which column should be returned), and also endpoint-driven related model loading.
+A REST API Server implemented by loopback.
+This API contains feature such as:
+* authentication and authorization
+* CRUD
+* validation
+* filtering or searching
+* pagination
+* column filtering: which column should be returned, and
+* endpoint-driven related model loading: for example by accessing /posts endpoint also will be able to load related model such as comments model.
 
 ### What is this repository for? ###
 
