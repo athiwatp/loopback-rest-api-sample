@@ -20,7 +20,7 @@
   },
   "validations": [],
   "relations": {
-    "cats": {
+    "cat": {
       "type": "hasMany",
       "model": "cat",
       "foreignKey": "id_alat"
