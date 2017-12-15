@@ -26,3 +26,13 @@ This API contains feature such as:
 * Execute this command from project root to run app in local: `node .` or `npm start`
 * Access API explorer to find all available resources: `http://0.0.0.0:3000/explore`
 * API will be accesible in: `http://0.0.0.0:3000/api/v1/[resource]`
+
+### Optimization Using PM2
+
+* Install PM2 by using `npm install -g pm2`
+* Run this command from app root directory `pm2 start . -i 0 --name "zul"`
+* Run this command to check app running status `pm2 list`
+* Run this command to restart app cluster `pm2 restart 0` or `pm2 restart all`
+* Run this command to stop app cluster `pm2 stop 0` or `pm2 stop all`
+* Run this command to monitor and see log `pm2 monit`
+* Run this command to kill pm2 daemon `pm2 kill`
