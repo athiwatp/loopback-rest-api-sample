@@ -30,7 +30,7 @@ This API contains feature such as:
 ### Optimization Using PM2
 
 * Install PM2 by using `npm install -g pm2`
-* Run this command from app root directory `pm2 start . -i 0 --name "zul"`
+* Run this command from app root directory `pm2 start . -i 0 --name "zul"` or `pm2 start ecosystem.config.json --env production` in production
 * Run this command to check app running status `pm2 list`
 * Run this command to restart app cluster `pm2 restart 0` or `pm2 restart all`
 * Run this command to stop app cluster `pm2 stop 0` or `pm2 stop all`
