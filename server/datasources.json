@@ -12,5 +12,9 @@
   "memory": {
     "name": "memory",
     "connector": "memory"
+  },
+  "redis": {
+    "name": "redis",
+    "connector": "redis"
   }
 }
