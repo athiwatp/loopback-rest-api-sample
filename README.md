@@ -9,9 +9,10 @@ This API contains feature such as:
 * validation
 * filtering or searching
 * pagination
-* column filtering: which column should be returned, and
+* column filtering: which column should be returned
 * endpoint-driven related model loading: for example by accessing `/posts` endpoint also will be able to load related model such as comments model.
 * persistent access token storage with redis
+* clustering with PM2
 
 ### What is this repository for? ###
 
