@@ -11,6 +11,7 @@ This API contains feature such as:
 * pagination
 * column filtering: which column should be returned, and
 * endpoint-driven related model loading: for example by accessing `/posts` endpoint also will be able to load related model such as comments model.
+* persistent access token storage with redis
 
 ### What is this repository for? ###
 
