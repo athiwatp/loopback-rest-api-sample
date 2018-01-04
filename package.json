@@ -9,8 +9,10 @@
     "lint": "eslint .",
     "start": "node .",
     "production": "NODE_ENV=production node .",
-    "posttest": "npm run lint && nsp check"
+    "posttest": "npm run lint && nsp check",
+    "precommit-msg": "echo 'Pre-commit checks...' && exit 0"
   },
+  "pre-commit": [ "precommit-msg", "lint" ],
   "dependencies": {
     "compression": "^1.0.3",
     "cors": "^2.5.2",
@@ -27,7 +29,8 @@
   "devDependencies": {
     "eslint": "^3.17.1",
     "eslint-config-loopback": "^8.0.0",
-    "nsp": "^2.1.0"
+    "nsp": "^2.1.0",
+    "pre-commit": "^1.2.2"
   },
   "repository": {
     "type": "",
