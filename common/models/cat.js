@@ -12,8 +12,11 @@ module.exports = function(Cat) {
   });
 
   // Allow alphanumeric and space only
-  Cat.validatesFormatOf('name', {with: /^[a-z\d\-_\s]+$/i, message:"is invalid, it should be only alphanumeric and space"});
-  
+  Cat.validatesFormatOf('name', {
+    with: /^[a-z\d\-_\s]+$/i,
+    message: 'is invalid, it should be only alphanumeric and space',
+  });
+
   Cat.validatesNumericalityOf('radius', {int: true});
   Cat.validatesNumericalityOf('duration', {int: true});
 
