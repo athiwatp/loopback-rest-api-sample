@@ -38,3 +38,7 @@ This API contains feature such as:
 * Run this command to stop app cluster `pm2 stop 0` or `pm2 stop all`
 * Run this command to monitor and see log `pm2 monit`
 * Run this command to kill pm2 daemon `pm2 kill`
+
+### Development
+
+* Code monitoring is using nodemon, you can start it using command `npm run-script nodemon`

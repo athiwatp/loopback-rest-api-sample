@@ -8,6 +8,7 @@
   "scripts": {
     "lint": "eslint .",
     "start": "node .",
+    "nodemon": "nodemon .",
     "production": "NODE_ENV=production node .",
     "posttest": "npm run lint && nsp check",
     "precommit-msg": "echo 'Pre-commit checks...' && exit 0"
