@@ -12,7 +12,10 @@
     "posttest": "npm run lint && nsp check",
     "precommit-msg": "echo 'Pre-commit checks...' && exit 0"
   },
-  "pre-commit": [ "precommit-msg", "lint" ],
+  "pre-commit": [
+    "precommit-msg",
+    "lint"
+  ],
   "dependencies": {
     "compression": "^1.0.3",
     "cors": "^2.5.2",
@@ -29,6 +32,7 @@
   "devDependencies": {
     "eslint": "^3.17.1",
     "eslint-config-loopback": "^8.0.0",
+    "nodemon": "^1.15.1",
     "nsp": "^2.1.0",
     "pre-commit": "^1.2.2"
   },
